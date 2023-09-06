@@ -27,10 +27,63 @@
     <script src="./components//Footer.js" defer></script>
     <title>Document</title>
   </head>
-  <body class="min-h-screen antialiased">
+  <body class="min-h-screen overflow-x-hidden antialiased">
     <header-component></header-component>
-    <main class="bg-slate-500">
-      <div>CHILDREN</div>
+    <main>
+      <section class="bg-white pb-20">
+        <div class="super-container relative flex h-[600px]">
+          <div class="flex flex-col justify-center gap-2 pt-4">
+            <h1 class="max-w-lg text-6xl">Check out our Best Weekly Prices</h1>
+            <p class="font-pt text-2xl text-dark">
+              Pellentesque et justo lorem. Proin hendrerit, velit <br />
+              vitae vehicula vulputate
+            </p>
+            <div class="flex gap-5">
+              <button
+                class="w-full max-w-[205px] rounded-[24px] bg-primary py-3 text-white"
+              >
+                View Sale
+              </button>
+              <button
+                class="w-full max-w-[200px] rounded-[24px] border-2 border-solid border-dark py-3"
+              >
+                Shop all
+              </button>
+            </div>
+          </div>
+          <div class="hidden lg:block">
+            <div
+              class="oval absolute left-[60%] top-[-150px] h-[1200px] w-[1200px] rounded-full border-[240px] border-solid border-primary opacity-20"
+            ></div>
+            <img
+              src="./util/images/apple.png"
+              alt="Image of an apple"
+              class="absolute right-[90px] top-[280px] opacity-80"
+            />
+            <img
+              src="./util/images/apple.png"
+              alt="Image of an apple"
+              class="absolute right-[-200px] top-[35px] opacity-80"
+            />
+            <img
+              src="./util/images/apple.png"
+              alt="Image of an apple"
+              class="absolute right-[-390px] top-[250px] opacity-80"
+            />
+          </div>
+        </div>
+
+        <div class="dots">
+          <ul
+            class="mx-auto flex w-[100px] justify-between rounded-full bg-[#EBEBEB]"
+          >
+            <li class="h-[13px] w-[13px] rounded-full bg-[#B7BDC4]"></li>
+            <li class="h-[13px] w-[13px] rounded-full bg-secondary"></li>
+            <li class="h-[13px] w-[13px] rounded-full bg-[#B7BDC4]"></li>
+          </ul>
+        </div>
+      </section>
+      <section></section>
     </main>
   </body>
 </html>

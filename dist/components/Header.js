@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <header>
+    <header class="bg-white">
     <!-- # MENU START -->
     <div
       class="menu flex min-h-[30px] w-full items-center bg-secondary font-pt"
@@ -94,8 +94,8 @@ class Header extends HTMLElement {
               <i class="fa-solid fa-magnifying-glass text-white"></i>
             </button>
           </div>
-          <ul class="flex gap-[10px]">
-            <li>
+          <ul class="flex gap-[10px] relative">
+            <li class="z-[10]">
               <a
                 class="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white drop-shadow-[0px_2px_15px_rgba(183,189,196,0.59)]"
                 href="./profile.html"
@@ -104,7 +104,7 @@ class Header extends HTMLElement {
               </a>
             </li>
             <li
-              class="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white drop-shadow-[0px_2px_15px_rgba(183,189,196,0.59)]"
+              class="z-[10]"
             >
               <a
                 class="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white drop-shadow-[0px_2px_15px_rgba(183,189,196,0.59)]"

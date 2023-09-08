@@ -30,13 +30,13 @@
   <body class="min-h-screen overflow-x-hidden antialiased">
     <header-component></header-component>
     <main>
-      <section class="bg-white pb-20">
-        <div class="super-container relative flex h-[600px]">
-          <div class="flex flex-col justify-center gap-2 pt-4">
+      <section class="relative bg-white pb-[135px]">
+        <div class="super-container relative flex h-[550px]">
+          <div class="flex flex-col gap-2 md:justify-center md:pt-4">
             <h1 class="max-w-lg text-6xl">Check out our Best Weekly Prices</h1>
-            <p class="font-pt text-2xl text-dark">
-              Pellentesque et justo lorem. Proin hendrerit, velit <br />
-              vitae vehicula vulputate
+            <p class="max-w-[550px] font-pt text-2xl text-dark">
+              Pellentesque et justo lorem. Proin hendrerit, velit vitae vehicula
+              vulputate
             </p>
             <div class="flex gap-5">
               <button
@@ -53,27 +53,48 @@
           </div>
           <div class="hidden lg:block">
             <div
-              class="oval absolute left-[60%] top-[-150px] h-[1200px] w-[1200px] rounded-full border-[240px] border-solid border-primary opacity-20"
+              class="oval absolute left-[57%] top-[-150px] h-[1200px] w-[1200px] rounded-full border-[240px] border-solid border-primary opacity-20"
             ></div>
             <img
               src="./util/images/apple.png"
               alt="Image of an apple"
-              class="absolute right-[90px] top-[280px] opacity-80"
+              class="absolute right-[45px] top-[250px] opacity-80"
             />
             <img
               src="./util/images/apple.png"
               alt="Image of an apple"
-              class="absolute right-[-200px] top-[35px] opacity-80"
+              class="absolute right-[-235px] top-[35px] opacity-80"
             />
             <img
               src="./util/images/apple.png"
               alt="Image of an apple"
-              class="absolute right-[-390px] top-[250px] opacity-80"
+              class="absolute right-[-550px] top-[250px] opacity-80"
             />
           </div>
         </div>
-
-        <div class="dots">
+        <div
+          class="badge absolute right-0 top-[460px] flex overflow-hidden rounded-[80px] rounded-r-none bg-secondary px-8 py-6"
+        >
+          <div class="w-[230px]">
+            <h2 class="text-2xl">Weekly Veggie Bundle</h2>
+            <p class="font-pt text-sm">
+              *3 lb (4 bunches of greens,<br />
+              various vegetables and fruits)
+            </p>
+          </div>
+          <div
+            class="relative z-[2] flex flex-col items-end justify-center gap-5"
+          >
+            <s class="rounded-full bg-white p-2 px-4 font-pt font-bold"
+              >$80.00</s
+            >
+            <span class="font-pt text-3xl font-bold text-danger">$49.99</span>
+          </div>
+          <div
+            class="oval absolute right-[-80px] top-[10px] z-[1] h-[250px] w-[250px] rounded-full bg-white opacity-30"
+          ></div>
+        </div>
+        <div class="dots pt-20">
           <ul
             class="mx-auto flex w-[100px] justify-between rounded-full bg-[#EBEBEB]"
           >
@@ -83,7 +104,747 @@
           </ul>
         </div>
       </section>
-      <section></section>
+      <section class="relative z-[10] bg-[#f4f5f5] pt-0">
+        <div
+          class="cards super-container flex items-center justify-center gap-2"
+        >
+          <div
+            class="card relative h-[250px] w-full max-w-[345px] translate-y-[-50%] overflow-hidden rounded-xl bg-white drop-shadow-[0px_2px_12px_rgb(183,189,196)]"
+          >
+            <img src="./util/images/multipleApple.png" alt="Image of apples" />
+            <div
+              class="oval absolute left-[150px] top-[100px] z-[2] h-[350px] w-[350px] rounded-full border-[70px] border-solid border-[#FC4B4E] opacity-20"
+            ></div>
+          </div>
+          <div
+            class="card relative h-[250px] w-full max-w-[345px] translate-y-[-50%] overflow-hidden rounded-xl bg-white drop-shadow-[0px_2px_12px_rgb(183,189,196)]"
+          >
+            <img src="./util/images/apple.png" alt="Image of apples" />
+            <div
+              class="oval absolute left-[50px] top-[0px] z-[2] h-[350px] w-[350px] rounded-full border-[70px] border-solid border-primary opacity-30"
+            ></div>
+            <div
+              class="absolute bottom-[20px] right-0 z-[4] h-[85px] w-[205px] rounded-full rounded-r-none bg-secondary"
+            >
+              <div class="z-2 relative flex h-full flex-col gap-1 p-4 text-end">
+                <p>Weekly Veggie Bundle</p>
+                <div class="flex items-center justify-end gap-3">
+                  <s class="rounded-full bg-white p-1 px-2 font-pt font-bold"
+                    >$80.00</s
+                  >
+                  <span class="font-pt text-lg font-bold text-danger"
+                    >$49.99</span
+                  >
+                </div>
+              </div>
+              <div
+                class="oval absolute right-[-50px] top-[-20px] z-[-1] h-[145px] w-[145px] rounded-full bg-white opacity-20"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="card relative h-[250px] w-full max-w-[345px] translate-y-[-50%] overflow-hidden rounded-xl bg-white drop-shadow-[0px_2px_12px_rgb(183,189,196)]"
+          >
+            <img src="./util/images/multipleApple.png" alt="Image of apples" />
+            <div
+              class="oval absolute left-[150px] top-[100px] z-[2] h-[350px] w-[350px] rounded-full border-[70px] border-solid border-secondary opacity-25"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="super-container">
+        <h2 class="pb-[10px] text-center text-4xl">Best Sellers This Week</h2>
+        <p
+          class="mx-auto max-w-[535px] pb-[12px] text-center font-pt text-dark"
+        >
+          Pretium quam vulputate dignissim suspendisse in est ante. Ac felis
+          donec et odio pellentesque diam
+        </p>
+        <div
+          class="cards grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center gap-[35px] pb-[40px]"
+        >
+          <div
+            class="card flex min-h-[110px] items-center justify-center gap-4 rounded-xl bg-white p-5"
+          >
+            <div class="icon">
+              <i class="fa-solid fa-truck h-[36px] w-auto"></i>
+            </div>
+            <div class="separator h-full w-[1px] bg-[#D2D2D2]"></div>
+            <div class="info">
+              <div class="title">Fast Delivery</div>
+              <p class="about max-w-[200px] font-pt">
+                Within 2-3 hours after ordering
+              </p>
+            </div>
+          </div>
+          <div
+            class="card flex min-h-[110px] items-center justify-center gap-4 rounded-xl bg-white p-5"
+          >
+            <div class="icon">
+              <i class="fa-regular fa-clock h-[36px] w-auto"></i>
+            </div>
+            <div class="separator h-full w-[1px] bg-[#D2D2D2]"></div>
+            <div class="info">
+              <div class="title">Opening Hours</div>
+              <p class="about max-w-[200px] font-pt">
+                Mon.-Fri.: 9.00 am- 9.00 pm
+              </p>
+            </div>
+          </div>
+          <div
+            class="card flex min-h-[110px] items-center justify-center gap-4 rounded-xl bg-white p-5"
+          >
+            <div class="icon">
+              <i class="fa-solid fa-seedling h-[36px] w-auto"></i>
+            </div>
+            <div class="separator h-full w-[1px] bg-[#D2D2D2]"></div>
+            <div class="info">
+              <div class="title">Eco-friendly packaging</div>
+              <p class="about max-w-[200px] font-pt">Sustainable materials</p>
+            </div>
+          </div>
+        </div>
+        <div class="offers flex flex-col gap-[35px] md:flex-row">
+          <div class="offer w-full rounded-xl bg-white md:max-w-[345px]">
+            <h3 class="title p-6 text-center text-2xl">
+              This week's hot offer
+            </h3>
+            <div class="relative">
+              <img
+                src="./util/images/Placeholder.png"
+                alt="Image of an apple"
+                class="w-full"
+              />
+              <div
+                class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+              >
+                Sale!
+              </div>
+            </div>
+            <div class="info p-6">
+              <div class="countdown flex justify-center gap-4 pb-8">
+                <div
+                  class="flex h-[54px] w-[54px] flex-col items-center justify-center rounded-lg bg-white drop-shadow-[2px_2px_4px_#EBEBEB]"
+                >
+                  <span class="font-pt text-lg font-bold" data-day>365</span>
+                  <span class="h-[2px] w-[12px] bg-primary"></span>
+                  <span class="font-pt text-xs text-[#6B737C]">day</span>
+                </div>
+                <div
+                  class="flex h-[54px] w-[54px] flex-col items-center justify-center rounded-lg bg-white drop-shadow-[2px_2px_4px_#EBEBEB]"
+                >
+                  <span class="font-pt text-lg font-bold" data-hour>02</span>
+                  <span class="h-[2px] w-[12px] bg-primary"></span>
+                  <span class="font-pt text-xs text-[#6B737C]">hour</span>
+                </div>
+                <div
+                  class="flex h-[54px] w-[54px] flex-col items-center justify-center rounded-lg bg-white drop-shadow-[2px_2px_4px_#EBEBEB]"
+                >
+                  <span class="font-pt text-lg font-bold" data-min>28</span>
+                  <span class="h-[2px] w-[12px] bg-primary"></span>
+                  <span class="font-pt text-xs text-[#6B737C]">min</span>
+                </div>
+                <div
+                  class="flex h-[54px] w-[54px] flex-col items-center justify-center rounded-lg bg-white drop-shadow-[2px_2px_4px_#EBEBEB]"
+                >
+                  <span class="font-pt text-lg font-bold" data-sec>15</span>
+                  <span class="h-[2px] w-[12px] bg-primary"></span>
+                  <span class="font-pt text-xs text-[#6B737C]">sec</span>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <div class="title text-center text-xl text-dark">
+                  Weekly Greens Boundle
+                </div>
+                <div class="price flex justify-center gap-[25px]">
+                  <span class="text-bold font-pt text-xl text-danger"
+                    >$29.99</span
+                  >
+                  <s class="font-pt text-xl font-bold text-[#77808A]">$49.99</s>
+                </div>
+                <p class="text-center font-pt text-dark">
+                  Pretium quam vulputate dignissim suspendisse in est ante. Ac
+                  felis donec et odio pellentesque diam
+                </p>
+                <button class="rounded-3xl bg-primary py-3 text-white">
+                  <i class="fa-solid fa-basket-shopping pr-3"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="products w-full rounded-xl bg-white p-6">
+            <div class="title pb-6 text-center text-2xl">
+              Fruits & Vegetables
+            </div>
+            <div
+              class="cards grid grid-cols-[repeat(auto-fit,minmax(175px,1fr))] gap-[20px]"
+            >
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <div class="title pb-1 text-center text-2xl">
+                  Fresh Strawberry
+                </div>
+                <div class="price mx-auto flex gap-3">
+                  <span class="font-pt text-xl font-bold text-danger"
+                    >$8.99</span
+                  >
+                  <s class="font-pt text-xl font-bold text-[#77808A]">$12.99</s>
+                </div>
+              </div>
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <div class="title pb-1 text-center text-2xl">Avocado</div>
+                <div class="price mx-auto flex gap-3">
+                  <span class="font-pt text-xl font-bold text-danger"
+                    >$2.99</span
+                  >
+                  <s class="font-pt text-xl font-bold text-[#77808A]">$10.30</s>
+                </div>
+              </div>
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <button class="h-full rounded-3xl bg-primary py-4 text-white">
+                  <i class="fa-solid fa-basket-shopping pr-3"></i> Add to Cart
+                </button>
+              </div>
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <div class="title pb-1 text-center text-2xl">
+                  Vegetable Bundle
+                </div>
+                <div class="price mx-auto flex gap-3">
+                  <span class="font-pt text-xl font-bold text-darkBold"
+                    >$8.99</span
+                  >
+                </div>
+              </div>
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <div class="title pb-1 text-center text-2xl">Onion</div>
+                <div class="price mx-auto flex gap-3">
+                  <span class="font-pt text-xl font-bold text-darkBold"
+                    >$1.20</span
+                  >
+                </div>
+              </div>
+              <div class="card flex flex-col">
+                <div class="relative pb-4">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt="Image of an apple"
+                    class="min-h-[230px] w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+                <div class="title pb-1 text-center text-2xl">Watermelon</div>
+                <div class="price mx-auto flex gap-3">
+                  <span class="font-pt text-xl font-bold text-danger"
+                    >$8.99</span
+                  >
+                  <s class="font-pt text-xl font-bold text-[#77808A]">$12.99</s>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="super-container">
+        <div class="banners flex flex-col gap-[35px] md:flex-row">
+          <div
+            class="discounts relative basis-[70%] overflow-hidden rounded-xl bg-[#EBEBEB] p-12"
+          >
+            <div class="title relative z-10">Weekly discounts</div>
+            <span class="relative z-10 block pb-3 text-5xl text-danger"
+              >Up to 70% off</span
+            >
+            <p class="relative z-10 max-w-[315px] pb-4 font-pt text-dark">
+              Cras tincidunt lobortis feugiat vivamus. Laoreet id donec ultrices
+              tincidunt.
+            </p>
+            <button
+              class="z-10 w-full max-w-[200px] rounded-3xl border border-darkBold py-3"
+            >
+              Shop all
+            </button>
+            <img
+              src="./util/images/apple.png"
+              alt="Image of an apple"
+              class="absolute right-[20px] top-[-25px] z-[1] opacity-50"
+            />
+            <div
+              class="circle absolute right-[-15%] top-[40px] z-[2] h-[530px] w-[530px] rounded-full border-[120px] border-solid border-secondary border-opacity-20"
+            ></div>
+          </div>
+          <!-- bg-[url('../../util/images/Placeholder.png')] bg-contain bg-center -->
+          <div class="sponsor relative basis-[30%] rounded-xl">
+            <div class="absolute mx-auto w-full pt-6 text-center">
+              Own production
+            </div>
+            <img
+              src="./util//images//Placeholder.png"
+              alt=""
+              class="h-full w-full rounded-xl object-cover"
+            />
+            <div
+              class="logo absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] rounded-full bg-white bg-opacity-30 px-6 text-[2.5rem] text-darkBold"
+            >
+              Disho
+              <img
+                src="./util/images/logo-leaf.png"
+                alt="Tree leaf"
+                class="absolute left-[48px] top-[10px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="super-container pb-12">
+        <div
+          class="wrapper grid grid-cols-[repeat(auto-fill,minmax(275px,1fr))] gap-[40px]"
+        >
+          <div class="flex flex-col gap-4">
+            <div class="title text-2xl">Snackes & Canned Goods</div>
+            <div
+              class="separator h-[3px] w-[100px] rounded-full bg-primary"
+            ></div>
+            <div class="items flex flex-col gap-4">
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Milk</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $0.80
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Strawberry</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    <span class="pr-2 text-danger">$0.80</span>
+                    <s class="text-[#77808A]">$12.99</s>
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Apple Snacks</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Plum Sauce</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="title text-2xl">Snackes & Canned Goods</div>
+            <div
+              class="separator h-[3px] w-[100px] rounded-full bg-primary"
+            ></div>
+            <div class="items flex flex-col gap-4">
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Milk</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $0.80
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Strawberry</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    <span class="pr-2 text-danger">$0.80</span>
+                    <s class="text-[#77808A]">$12.99</s>
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Apple Snacks</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Plum Sauce</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="title text-2xl">Snackes & Canned Goods</div>
+            <div
+              class="separator h-[3px] w-[100px] rounded-full bg-primary"
+            ></div>
+            <div class="items flex flex-col gap-4">
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Milk</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $0.80
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Strawberry</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    <span class="pr-2 text-danger">$0.80</span>
+                    <s class="text-[#77808A]">$12.99</s>
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image relative">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                  <div
+                    class="sale-tag absolute right-0 top-[30px] rounded-full rounded-r-none bg-secondary p-2 px-4 pl-5"
+                  >
+                    Sale!
+                  </div>
+                </div>
+
+                <div class="details w-full">
+                  <div class="title text-2xl">Organic Apple Snacks</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+              <div class="item flex items-center gap-5">
+                <div class="image">
+                  <img
+                    src="./util/images/Placeholder.png"
+                    alt=""
+                    class="aspect-[5/6] max-w-full rounded-xl object-cover"
+                  />
+                </div>
+                <div class="details w-full">
+                  <div class="title text-2xl">Fresh Plum Sauce</div>
+                  <div
+                    class="price pb-2 pt-[40px] font-pt text-xl font-bold text-darkBold"
+                  >
+                    $3.99
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative h-[530px] overflow-hidden">
+        <img
+          src="./util/images/image.png"
+          alt=""
+          class="max-w-full object-cover"
+        />
+        <div
+          class="circle absolute bottom-[60px] right-[-28%] z-[-1] h-[1040px] w-[1040px] rounded-full border-[280px] border-solid border-secondary border-opacity-20"
+        ></div>
+        <div class="absolute top-[50%] mx-auto w-full translate-y-[-50%] p-2">
+          <div class="title mx-auto max-w-[900px] pb-3 text-center text-5xl">
+            Order Home Delivery of Groceries
+          </div>
+          <p class="mx-auto max-w-[900px] pb-3 text-center font-pt text-2xl">
+            Adipiscing elit ut aliquam purus sit amet luctus. Neque egestas
+            congue quisque egestas diam in. Pretium quam vulputate dignissim
+            suspendisse in est ante in nibh. Leo a diam sollicitudin tempor
+          </p>
+          <div
+            class="phone mx-auto w-fit rounded-full bg-white p-3 px-7 font-pt text-2xl font-bold sm:p-4 sm:px-8 sm:text-3xl"
+          >
+            <i class="fa-solid fa-headset text-primary"></i> +1-202-555-0168
+          </div>
+        </div>
+      </section>
+      <section class="bg-white">
+        <div class="super-container pb-12">
+          <h2 class="pb-3 text-center text-4xl">From the blog</h2>
+          <p class="mx-auto max-w-[530px] pb-6 text-center font-pt text-dark">
+            Pretium quam vulputate dignissim suspendisse in est ante. Ac felis
+            donec et odio pellentesque diam
+          </p>
+          <ul
+            class="categories grid grid-cols-[repeat(auto-fit,minmax(275px,1fr))] gap-[30px]"
+          >
+            <li>
+              <div class="image pb-4">
+                <img
+                  src="./util/images/image2.png"
+                  alt=""
+                  class="max-width-full rounded-xl"
+                />
+              </div>
+              <div class="pb-3 font-pt font-bold">
+                Category
+                <div
+                  class="separator h-[3px] w-[50px] rounded-full bg-primary"
+                ></div>
+              </div>
+              <div class="author pb-1 font-pt text-sm">
+                <span class="font-bold">By: John Doe</span> | Sept. 03, 2021
+              </div>
+              <div class="title text-xl text-darkBold">
+                Beet & Carrot Salad with Sweet Citrus Vinaigrette
+              </div>
+              <div class="desc pb-5 font-pt text-dark">
+                Accumsan tortor posuere ac ut consequat semper viverra nam.
+                Posuere sollicitudin aliquam ultrices sagittis orci a. Nibh cras
+                pulvinar mattis nunc
+              </div>
+              <button
+                class="rounded-full border border-darkBold p-3 px-6 text-sm"
+              >
+                Read More <i class="fa-solid fa-angles-right pl-2"></i>
+              </button>
+            </li>
+            <li>
+              <div class="image pb-4">
+                <img
+                  src="./util/images/image2.png"
+                  alt=""
+                  class="max-width-full rounded-xl"
+                />
+              </div>
+              <div class="pb-3 font-pt font-bold">
+                Category
+                <div
+                  class="separator h-[3px] w-[50px] rounded-full bg-primary"
+                ></div>
+              </div>
+              <div class="author pb-1 font-pt text-sm">
+                <span class="font-bold">By: John Doe</span> | Sept. 03, 2021
+              </div>
+              <div class="title text-xl text-darkBold">
+                Beet & Carrot Salad with Sweet Citrus Vinaigrette
+              </div>
+              <div class="desc pb-5 font-pt text-dark">
+                Accumsan tortor posuere ac ut consequat semper viverra nam.
+                Posuere sollicitudin aliquam ultrices sagittis orci a. Nibh cras
+                pulvinar mattis nunc
+              </div>
+              <button
+                class="rounded-full border border-darkBold p-3 px-6 text-sm"
+              >
+                Read More <i class="fa-solid fa-angles-right pl-2"></i>
+              </button>
+            </li>
+            <li>
+              <div class="image pb-4">
+                <img
+                  src="./util/images/image2.png"
+                  alt=""
+                  class="max-width-full rounded-xl"
+                />
+              </div>
+              <div class="pb-3 font-pt font-bold">
+                Category
+                <div
+                  class="separator h-[3px] w-[50px] rounded-full bg-primary"
+                ></div>
+              </div>
+              <div class="author pb-1 font-pt text-sm">
+                <span class="font-bold">By: John Doe</span> | Sept. 03, 2021
+              </div>
+              <div class="title text-xl text-darkBold">
+                Beet & Carrot Salad with Sweet Citrus Vinaigrette
+              </div>
+              <div class="desc pb-5 font-pt text-dark">
+                Accumsan tortor posuere ac ut consequat semper viverra nam.
+                Posuere sollicitudin aliquam ultrices sagittis orci a. Nibh cras
+                pulvinar mattis nunc
+              </div>
+              <button
+                class="rounded-full border border-darkBold p-3 px-6 text-sm"
+              >
+                Read More <i class="fa-solid fa-angles-right pl-2"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="">
+        <div class="super-container flex w-full pt-0">
+          <img src="./util/images/logo.png" alt="" class="max-w-full" />
+          <img src="./util/images/logo.png" alt="" class="max-w-full" />
+          <img src="./util/images/logo.png" alt="" class="max-w-full" />
+          <img src="./util/images/logo.png" alt="" class="max-w-full" />
+        </div>
+        <div class="flex">
+          <img src="./util/images/logo.png" alt="" />
+          <img src="./util/images/logo.png" alt="" />
+          <img src="./util/images/logo.png" alt="" />
+          <img src="./util/images/logo.png" alt="" />
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -14,6 +14,7 @@
 
 @layer components {
   .super-container {
-    @apply container mx-auto h-full max-w-7xl pt-12;
+    /* @apply container mx-auto h-full max-w-7xl pt-12; */
+    @apply container mx-auto h-full max-w-[1100px] pt-12;
   }
 }

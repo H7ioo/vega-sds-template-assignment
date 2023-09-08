@@ -37,6 +37,8 @@ jQuery(() => {
         if (addToCartEl && basketCounterEl) {
             addToCartEl.on("click", () => {
                 const currCount = parseInt(basketCounterEl.text());
+                if (currCount >= 99)
+                    return basketCounterEl.text(`${currCount}+`);
                 basketCounterEl.text(currCount + 1);
             });
         }

@@ -30,4 +30,15 @@ jQuery(() => {
         }
         const interval = setInterval(updateCounter, 1 * 1000);
     })();
+    (function addToCart() {
+        const addToCartEl = $(".add-to-cart");
+        const basketCounterEl = $("#basket-counter");
+        console.log(addToCartEl, basketCounterEl);
+        if (addToCartEl && basketCounterEl) {
+            addToCartEl.on("click", () => {
+                const currCount = parseInt(basketCounterEl.text());
+                basketCounterEl.text(currCount + 1);
+            });
+        }
+    })();
 });

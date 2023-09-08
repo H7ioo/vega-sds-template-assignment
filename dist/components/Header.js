@@ -110,7 +110,7 @@ class Header extends HTMLElement {
                 class="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white drop-shadow-[0px_2px_15px_rgba(183,189,196,0.59)]"
                 href="./cart.html"
                 >
-                <span data-basket-count class="absolute bg-primary w-[23px] h-[23px] top-[-5px] right-[-5px] rounded-full flex justify-center items-center text-white font-pt font-bold text-sm">2</span>
+                <span id="basket-counter" class="absolute bg-primary w-[23px] h-[23px] top-[-5px] right-[-5px] rounded-full flex justify-center items-center text-white font-pt font-bold text-sm">2</span>
                 <i class="fa-solid fa-basket-shopping"></i
               >
               </a>
